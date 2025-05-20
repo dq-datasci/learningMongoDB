@@ -1,0 +1,32 @@
+# Ignorar la carpeta del entorno virtual
+venv/
+.venv/
+env/
+
+# Ignorar archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Ignorar archivos de entorno (variables de entorno)
+.env
+*.env
+
+# Ignorar logs
+*.log
+log/
+
+# Ignorar bases de datos locales (si las usas en desarrollo)
+*.sqlite3
+*.db
+
+# Ignorar archivos específicos del sistema operativo
+.DS_Store # macOS (aunque estés en Windows, es buena práctica)
+Thumbs.db # Windows
+
+# IDEs
+.idea/ # PyCharm
+.vscode/ # VS Code (puedes querer rastrear settings.json si es compartido, pero ignora la mayoría)
+*.sublime-project
+*.sublime-workspace
