@@ -30,3 +30,6 @@ Thumbs.db # Windows
 .vscode/ # VS Code (puedes querer rastrear settings.json si es compartido, pero ignora la mayoría)
 *.sublime-project
 *.sublime-workspace
+
+# Ignorar todos los archivos CSV
+*.csv
