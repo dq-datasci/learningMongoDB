@@ -35,9 +35,10 @@ def import_csv_to_mongodb():
         print(f"Importando datos desde '{CSV_FILE_PATH}' a '{DATABASE_NAME}.{COLLECTION_NAME}'...")
 
         inserted_count = 0
-        with open(CSV_FILE_PATH, mode='r', encoding='utf-8') as csvfile:
+        with open(CSV_FILE_PATH, mode='r', encoding='utf-8-sig') as csvfile:
             # Usa csv.DictReader para leer las filas como diccionarios
             # donde las claves son los encabezados del CSV
+            # El utf-8-sig es para manejar el encoding UTF-8 con BOM
             csv_reader = csv.DictReader(csvfile)
 
             # Definir los nombres de las columnas en tu CSV para mapearlas
