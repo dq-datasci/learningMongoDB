@@ -1,0 +1,5 @@
+# .env
+# MONGO_URI="mongodb+srv://"
+# quitar los comentarios e incluir la dirección
+#renombrar el archivo como .env
+
